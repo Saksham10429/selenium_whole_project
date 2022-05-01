@@ -1,0 +1,10 @@
+package com.lambdatest;
+
+public class new_project {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

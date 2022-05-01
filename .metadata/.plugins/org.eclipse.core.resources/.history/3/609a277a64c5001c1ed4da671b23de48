@@ -1,0 +1,5 @@
+appactivity = com.androidsample.generalstore.SplashActivity
+apppackage = com.androidsample.generalstore
+deviceName = sushanta
+platformName = Android
+chromeexcutable = C://selenium//chromedriver.exe

@@ -1,0 +1,95 @@
+package webdriver_new;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.util.Set;
+
+import javax.swing.event.MenuKeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class javascript_executer {
+
+	WebDriver wb;
+	public String URL="https://opensource-demo.orangehrmlive.com/index.php/auth/login";
+	public String URL1="https://demoapp.skillrary.com";
+
+	@BeforeTest()
+	public void testcase() {
+		WebDriverManager.chromedriver().setup();
+		wb=new ChromeDriver();
+		wb.get(URL);
+		
+		
+	}
+	
+	@Test(enabled=false)
+	public void testcase1() throws InterruptedException {
+		JavascriptExecutor js=(JavascriptExecutor)wb;
+	System.out.println(js.executeScript("return document.title"));    // it is used to return the title of the url u opean
+	
+	System.out.println(js.executeScript("return document.domain"));   // it is used to get the domain
+	
+    System.out.println(js.executeScript("return document.documentElement.innerText"));	// for fetching all the innertext
+    
+    System.out.println(js.executeScript("return document.getElementById('divUsername').innerText"));  // for fetching the inner text of username block
+    
+    Thread.sleep(3000);
+    js.executeScript("history.go(0)");
+    
+    js.executeScript("window.history.forward(0)");   // to go forward 
+    
+    js.executeScript("window.history.back(0)");     // to go backward
+    
+    
+	}
+	
+	@Test(enabled=false)
+	public void testcase3() {
+		wb.findElement(By.xpath("//*[@href='login.php?type=login']")).click(); // login via javascript
+		
+		wb.findElement(By.xpath("//*[@id='email']")).sendKeys("user");
+		
+		wb.findElement(By.xpath("//*[@id='password']")).sendKeys("user");
+		
+		wb.findElement(By.xpath("//*[@id='last']")).click();
+	}
+	
+	@Test()
+	public void testcase4() throws InterruptedException {
+		JavascriptExecutor js=(JavascriptExecutor)wb;
+		
+		js.executeScript("document.getElementById('txtUsername').value='Admin'");
+		
+		js.executeScript("document.getElementById('txtPassword').value='admin123'");
+
+		js.executeScript("document.getElementById('btnLogin').click()");
+		
+		js.executeScript("document.getElementById('menu_pim_viewPimModule').click()");
+		
+		js.executeScript("window.scrollBy(0,500)");  // if we want to scroll by co-ordinate
+		
+		js.executeScript("window.scrollBy(0,document.body.scrollHeight)");  // scroll till the down
+		Thread.sleep(3000);
+		js.executeScript("window.scrollBy(0,-document.body.scrollHeight)"); // scroll back to the top
+		Thread.sleep(3000);
+		js.executeScript("document.getElementById('ohrmList_chkSelectRecord_31').scrollIntoView()");
+	}
+	
+	
+	
+	@AfterTest
+	public void testcase2() {
+		//wb.close();
+	}
+}

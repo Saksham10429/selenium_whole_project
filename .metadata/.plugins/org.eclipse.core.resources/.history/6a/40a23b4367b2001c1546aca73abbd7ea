@@ -1,0 +1,56 @@
+package webdriver_new;
+
+import java.awt.AWTException;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class venu_app {
+	WebDriver wb;
+	public String URL="https://demoapp.skillrary.com/index.php";
+
+	@BeforeTest()
+	public void testcase() {
+		WebDriverManager.chromedriver().setup();
+		wb=new ChromeDriver();
+		wb.get(URL);
+		
+		
+		
+		
+		
+	
+}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

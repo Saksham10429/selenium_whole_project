@@ -1,0 +1,54 @@
+package webdriver_new;
+
+import java.awt.AWTException;
+import java.awt.Robot;
+import java.util.Set;
+
+import javax.swing.event.MenuKeyEvent;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
+
+public class javascript_executer {
+
+	WebDriver wb;
+	public String URL="https://opensource-demo.orangehrmlive.com/index.php/auth/login";
+
+	@BeforeTest()
+	public void testcase() {
+		WebDriverManager.chromedriver().setup();
+		wb=new ChromeDriver();
+		wb.get(URL);
+		
+		
+	}
+	
+	@Test
+	public void testcase1() throws InterruptedException {
+		JavascriptExecutor js=(JavascriptExecutor)wb;
+	System.out.println(js.executeScript("return document.title"));    // it is used to return the title of the url u opean
+	
+	System.out.println(js.executeScript("return document.domain"));   // it is used to get the domain
+	
+    System.out.println(js.executeScript("return document.documentElement.innerText"));	// for fetching all the innertext
+    
+    System.out.println(js.executeScript("return document.getElementById('divUsername').innerText"));  // for fetching the inner text of username block
+    
+    Thread.sleep(3000);
+    js.executeScript("history.go(0)");
+	}
+	
+	@AfterTest
+	public void testcase2() {
+		wb.close();
+	}
+}

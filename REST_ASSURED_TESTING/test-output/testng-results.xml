@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-03-20T10:27:17Z" name="Default suite" finished-at="2022-03-20T10:27:17Z" duration-ms="75">
+    <groups>
+    </groups>
+    <test started-at="2022-03-20T10:27:17Z" name="Default test" finished-at="2022-03-20T10:27:17Z" duration-ms="75">
+      <class name="rest_testing.test_ng">
+        <test-method is-config="true" signature="BS()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="BS" finished-at="2022-03-20T15:57:17Z" duration-ms="47" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BS -->
+        <test-method is-config="true" signature="BT()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="BT" finished-at="2022-03-20T15:57:17Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BT -->
+        <test-method is-config="true" signature="BC()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="BC" finished-at="2022-03-20T15:57:17Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BC -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="BM" finished-at="2022-03-20T15:57:17Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method signature="TestCase1()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="TestCase1" finished-at="2022-03-20T15:57:17Z" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase1 -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="AM" finished-at="2022-03-20T15:57:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method signature="TestCase2()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="TestCase2" finished-at="2022-03-20T15:57:17Z" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestCase2 -->
+        <test-method is-config="true" signature="BM()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="BM" finished-at="2022-03-20T15:57:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BM -->
+        <test-method is-config="true" signature="AM()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="AM" finished-at="2022-03-20T15:57:17Z" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AM -->
+        <test-method is-config="true" signature="AC()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="AC" finished-at="2022-03-20T15:57:17Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AC -->
+        <test-method is-config="true" signature="AT()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:17Z" name="AT" finished-at="2022-03-20T15:57:17Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AT -->
+        <test-method is-config="true" signature="AS()[pri:0, instance:rest_testing.test_ng@11d8ae8b]" started-at="2022-03-20T15:57:18Z" name="AS" finished-at="2022-03-20T15:57:18Z" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AS -->
+      </class> <!-- rest_testing.test_ng -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
